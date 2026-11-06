@@ -13,7 +13,8 @@ LNBS-ACD website/
 │   └── app.js             # 前端脚本（轮播、分页、导航高亮）
 ├── photo/                 # 图片源文件（构建时复制到 site/photo/）
 ├── scripts/
-│   └── build.mjs          # 构建脚本（node scripts/build.mjs）
+│   ├── build.mjs          # 构建脚本（node scripts/build.mjs）
+│   └── serve.mjs          # 本地预览服务器（node scripts/serve.mjs）
 └── site/                  # 构建产物（提交到 GitHub Pages 的目录）
     ├── index.html
     ├── news.html
@@ -40,6 +41,29 @@ node scripts/build.mjs
 3. 复制 `photo/` 下的图片到 `site/photo/`
 4. 复制 `src/styles.css` 和 `src/app.js` 到 `site/`
 5. 生成所有 HTML 页面到 `site/`
+
+## 本地预览
+
+```bash
+node scripts/serve.mjs
+```
+
+启动后浏览器访问 `http://localhost:3000`，模拟 GitHub Pages 行为：
+- 静态文件服务 `site/` 目录
+- 未匹配 URL 自动 fallback 到 `404.html`
+- 支持 `/news/20261106/p1/` 这类 URL 正确路由
+
+可测试的 URL：
+
+| URL | 说明 |
+|-----|------|
+| `http://localhost:3000/` | 首页 |
+| `http://localhost:3000/news.html` | 新闻列表 |
+| `http://localhost:3000/news/p1.html` | 单篇新闻 |
+| `http://localhost:3000/about.html` | 关于 |
+| `http://localhost:3000/photo.html` | 图片画廊 |
+| `http://localhost:3000/photo/vc7heidw.jpg` | 直接访问图片 |
+| `http://localhost:3000/nonexistent` | 404 兜底 |
 
 ## 更新内容
 
