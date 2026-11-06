@@ -1,0 +1,35 @@
+{
+  "name": "LNBS-ACD",
+  "tagline": "Algorithm & Code Development",
+  "logoUrl": "https://avatars.githubusercontent.com/u/222450583?s=200&v=4",
+  "nav": [
+    { "label": "首页", "url": "/" },
+    { "label": "新闻", "url": "/news.html" },
+    { "label": "关于", "url": "/about.html" },
+    { "label": "图片", "url": "/photo.html" }
+  ],
+  "carousels": [
+    {
+      "image": "/photo/vc7heidw.jpg",
+      "title": "LNBS-ACD 官方网站",
+      "sub": "算法竞赛 · 全栈开发 · 架构运维",
+      "link": "https://github.com/LNBS-ACD"
+    }
+  ],
+  "about": {
+    "title": "关于 LNBS-ACD",
+    "paragraphs": [
+      "LNBS-ACD 致力于连接纯粹的算法逻辑与现实的工程挑战。我们的代码不仅跑在 OJ 上，也运行在服务器上。",
+      "成员来自不同背景，但在算法竞赛、系统开发与开源项目上彼此协作、互相成长。"
+    ],
+    "links": [
+      { "label": "GitHub Organization @LNBS-ACD", "url": "https://github.com/LNBS-ACD" }
+    ]
+  },
+  "news": [
+    { "id": 1, "date": "2026-11-06", "title": "欢迎使用 LNBS-ACD 新网站", "summary": "全新结构上线，新闻、关于、图片模块就绪。", "body": "<p>LNBS-ACD 的官方网站完成重构。</p><p>现在包含新闻、关于、图片模块，未来内容会持续更新。</p>" },
+    { "id": 2, "date": "2026-11-06", "title": "算法竞赛集训营开始报名", "summary": "本季度集训营开放报名。", "body": "<p>本季度集训营开放报名，面向全体成员。</p>" },
+    { "id": 3, "date": "2026-11-01", "title": "NOI 模拟赛回顾", "summary": "上周 NOI 模拟赛结果与题目解析。", "body": "<p>上周 NOI 模拟赛结果与题目解析见仓库。</p>" },
+    { "id": 4, "date": "2026-10-20", "title": "新成员加入", "summary": "欢迎两位新同学加入 LNBS-ACD。", "body": "<p>欢迎两位新同学加入 LNBS-ACD，一起加油。</p>" }
+  ]
+}
